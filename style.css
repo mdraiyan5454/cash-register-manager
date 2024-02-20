@@ -1,0 +1,271 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: lightgreen; Change background color to light green */
+
+    overflow: hidden;
+    animation: changeColors 5s infinite alternate; /* Change colors every 10 seconds */
+  }
+  
+  @keyframes changeColors {
+    0% {
+      background-color: lightgreen; /* Start color */
+    }
+    50% {
+      background-color: rgb(29, 235, 29) /* Middle color */
+    }
+    100% {
+      background-color: rgb(5, 179, 5); /* End color */
+    }
+  }
+
+
+.container {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 30px;
+    width: 50vw;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.384);
+    backdrop-filter: blur(10px);
+}
+
+.heading {
+    color: white; /* Change heading color to green */
+}
+
+.description {
+    color:white; /* Change description color to green */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:white; /* Change label color to green */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(7, 181, 7);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.change_table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.change_table th, .change_table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color:rgb(7, 181, 7); /* Change table text color to green */
+}
+
+.change_table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.change_table th,
+.change_table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.change_table th {
+    background-color:rgb(7, 181, 7);
+    color: #fff;
+}
+
+.change_table td {
+    background-color: #fff;
+    color: #000;
+}
+
+.change_table th:first-child,
+.change_table td:first-child {
+    border-left: none;
+}
+
+.change_table th:last-child,
+.change_table td:last-child {
+    border-right: none;
+}
+
+.change_table tr:first-child th {
+    border-top: none;
+}
+
+.change_table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Media queries */
+/* @media screen and (max-width: 1080px) {
+    .container {
+        width: 70vw;
+    }
+    
+    .heading {
+        font-size: 20px;
+    }
+    
+    .description {
+        font-size: 16px;
+    }
+    
+    label,
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        padding: 10px;
+    }
+}
+ */
+
+ @media screen and (max-width: 768px) {
+    input[type="text"], button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        width: 85%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   .heading {
+        color: white;
+        font-size: 25px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .heading {
+         color: white;
+         font-size: 24px;
+         line-height: 50px;
+     }
+     .description {
+        font-size: 15px;
+    }
+ }
+
+ @media screen and (max-width: 365px) {
+    .heading {
+         color: white;
+         font-size: 23px;
+         line-height: 50px;
+     }
+     .description {
+        font-size: 15px;
+    }
+ }
+ @media screen and (max-width: 350px) {
+    .heading {
+         color: white;
+         font-size: 22px;
+         line-height: 50px;
+     }
+     .description {
+        font-size: 15px;
+    }
+ }
+ @media screen and (max-width: 350px) {
+    .heading {
+         font-size: 21px;
+         line-height: 50px;
+     }
+     .description {
+        font-size: 15px;
+    }
+    .container {
+        padding: 16px;
+    }
+ }
+
+ @media screen and (max-width: 340px) {
+    .container {
+        padding: 20px;
+    }
+    
+ }
+ 
+ @media screen and (max-width: 330px) {
+    .container {
+        padding: 20px;
+    }
+    
+ }
+ 
+ @media screen and (max-width: 320px) {
+    .container {
+        padding: 22px;
+    }
+   .change_table{
+    width: 100%;
+   }
+ }
+
+
+ 
